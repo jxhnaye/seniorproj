@@ -1,0 +1,72 @@
+.navbar {
+  background-color: #eaddca;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure it stays above other elements */
+  padding: 0 20px;
+
+  &_container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: inherit;
+    position: relative;
+
+    &_logo {
+      cursor: pointer;
+    }
+
+    &_menu {
+      position: absolute; /* Absolute position to keep it top-right */
+      right: 20px; /* Align to the right of the navbar */
+      display: flex;
+      list-style: none;
+      text-align: center;
+
+      &_item {
+        line-height: 40px;
+        margin-left: 1.5rem; /* Changed to margin-left to separate items */
+        font-size: 1.6rem;
+        font-weight: 900;
+
+        &::after {
+          content: "";
+          display: block;
+          height: 3px;
+          width: 0;
+          background: transparent;
+          transition: all 0.5s ease;
+        }
+
+        &:hover::after {
+          width: 100%;
+          background-color: #5c4033;
+        }
+
+        &_links {
+          color: #5c4033;
+          text-decoration: none;
+          padding: 0.5rem;
+        }
+      }
+    }
+  }
+
+  &_center {
+    position: absolute; /* Use absolute positioning to center it on the page */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+
+    &_title {
+      font-size: 3.5rem; /* Adjust font size as needed */
+      font-weight: bold;
+      color: #5c4033; /* Use your existing color variable */
+    }
+  }
+}

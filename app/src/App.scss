@@ -1,0 +1,18 @@
+.App{
+  height: 100%;
+
+  &__main-page-content{
+      height: calc(100% - 80px);
+  }
+}
+
+.error-input {
+  border: 2px solid #d32f2f;
+  background-color: #ffe6e6;
+  color: #d32f2f; 
+}
+
+.error-input::placeholder {
+  color: #d32f2f; 
+  font-weight: bold; 
+}

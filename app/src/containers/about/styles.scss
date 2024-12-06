@@ -1,0 +1,40 @@
+.about {
+    background-color: #5c4033;
+    color: #eaddca;
+    padding: 40px;
+    max-width: 80%;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    font-size: 1.6rem;
+  }
+  
+  .about h1,
+  .about h2 {
+    text-align: center;
+    color: #d7b59e;
+    font-size: 2rem;
+  }
+  
+  .instructions-list {
+    margin-top: 20px;
+    padding-left: 20px;
+  }
+  
+  .instructions-list li {
+    margin-bottom: 15px;
+  }
+  
+  .instructions-list strong {
+    color: #d7b59e;
+  }
+  
+  .benefits-list {
+    margin-top: 20px;
+    padding-left: 20px;
+  }
+  
+  .benefits-list li {
+    margin-bottom: 10px;
+  }
+  

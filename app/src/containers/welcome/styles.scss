@@ -1,0 +1,71 @@
+.home {
+    position: relative;
+    height: 50vh; /* Ensure the container takes full viewport height */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center;
+    align-items: center; /* Center everything horizontally */
+  
+    &_text-wrapper {
+      display: flex;
+      flex-direction: column; /* Stack text and button */
+      align-items: center; /* Center horizontally */
+      justify-content: center; /* Center vertically */
+      text-align: center; /* Center text */
+      gap: 2rem; /* Add space between elements */
+  
+      h1 {
+        color: #5c4033;
+        margin: 0px;
+        font-weight: 500;
+        font-size: 8rem;
+        line-height: 10rem;
+        overflow: hidden;
+        white-space: nowrap;
+        animation: typingEffect 2.5s steps(30, end);
+      }
+  
+      .google-auth-button {
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #5c4033; /* White background */
+        color: #eaddca; /* Gray text color */
+        border: 1px solid #5c4033; /* Light gray border */
+        border-radius: 4px;
+        padding: 0.5rem 1.5rem;
+        font-size: 1rem;
+        font-weight: 500;
+        cursor: pointer;
+      
+        .google-icon-wrapper {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 0.5rem;
+        }
+      
+        .google-icon {
+          width: 30px;
+          height: 30px;
+        }
+      
+        .button-text {
+          color: #eaddca; /* Match text color */
+          font-weight: 500;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+
+@keyframes typingEffect{
+    from {
+        width: 0;
+    }
+    
+    to {
+        width: 100%;
+    }
+}
